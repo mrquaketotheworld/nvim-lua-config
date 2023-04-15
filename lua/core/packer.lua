@@ -32,7 +32,6 @@ return require('packer').startup(function(use)
     }
   }
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-tree/nvim-tree.lua'
   use {
     'phaazon/hop.nvim',
     branch = 'v2' -- optional but strongly recommended
