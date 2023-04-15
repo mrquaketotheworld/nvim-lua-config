@@ -1,3 +1,4 @@
+vim.opt.termguicolors = true
 vim.opt.smartindent = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -12,7 +13,6 @@ vim.opt.keymap = 'russian-jcukenwin'
 vim.opt.imsearch = 0
 vim.opt.iminsert = 0
 vim.opt.undofile = true
-vim.opt.guicursor = 'a:blinkon250'
 vim.opt.updatetime = 50
 vim.opt.numberwidth = 1
 vim.opt.swapfile = false
@@ -23,4 +23,6 @@ vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.cmd.colorscheme 'PaperColor'
+vim.opt.background = 'light'
 vim.opt.grepprg = 'rg --smart-case --vimgrep'
+vim.opt.guicursor = 'a:blinkon250'

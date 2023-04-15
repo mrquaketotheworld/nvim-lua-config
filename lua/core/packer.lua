@@ -4,7 +4,6 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use 'nvim-treesitter/playground'
   use 'mbbill/undotree'
@@ -38,6 +37,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-repeat'
   use 'windwp/nvim-autopairs'
   use 'mattn/emmet-vim'
-  use 'NLKNguyen/papercolor-theme'
   use 'Olical/conjure'
+  use 'NLKNguyen/papercolor-theme'
+  use 'liuchengxu/space-vim-theme'
+  use 'navarasu/onedark.nvim'
 end)
