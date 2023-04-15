@@ -16,11 +16,10 @@ vim.opt.guicursor = 'a:blinkon250'
 vim.opt.updatetime = 50
 vim.opt.numberwidth = 1
 vim.opt.swapfile = false
-vim.opt.pumblend = 20
-vim.opt.winblend = 20
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.autochdir = true
 vim.opt.writebackup = false
 vim.opt.splitright = true
+vim.opt.splitbelow = true
 vim.cmd.colorscheme 'PaperColor'
