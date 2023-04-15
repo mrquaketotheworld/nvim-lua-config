@@ -8,7 +8,7 @@ vim.keymap.set('n', '<leader>w', ':w!<cr>')
 vim.keymap.set('n', '<leader>x', ':x!<cr>', {silent = true})
 
 -- Revert buffer
-vim.keymap.set('n', '<leader>e', ':e!<cr>', {silent = true})
+vim.keymap.set('n', '<leader>r', ':e!<cr>', {silent = true})
 
 -- Quit all
 vim.keymap.set('n', '<leader>!', ':qa!<cr>')
@@ -36,6 +36,9 @@ vim.keymap.set('n', '<leader>o', '<C-w>o')
 
 -- Close window
 vim.keymap.set('n', '<leader>q', '<C-w>q')
+
+-- Open Netrw
+vim.keymap.set('n', '<leader>e', ':e.<cr>', {silent = true})
 
 -- Open terminal
 vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr>:norm A<cr>')
