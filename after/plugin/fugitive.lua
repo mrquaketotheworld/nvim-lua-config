@@ -1,0 +1,5 @@
+vim.keymap.set('n', '<leader>gg', ':Git<cr>')
+vim.keymap.set('n', '<leader>gc', ':Commits<cr>')
+vim.keymap.set('n', '<leader>gb', ':Git blame<cr>')
+vim.keymap.set('n', '<leader>gr', ':Gread<cr>')
+vim.keymap.set('n', '<leader>gl', ':Git log<cr>')
