@@ -23,3 +23,4 @@ vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.cmd.colorscheme 'PaperColor'
+vim.opt.grepprg = 'rg --smart-case --vimgrep'
