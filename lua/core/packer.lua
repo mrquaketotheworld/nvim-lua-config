@@ -41,4 +41,5 @@ return require('packer').startup(function(use)
   use 'NLKNguyen/papercolor-theme'
   use 'liuchengxu/space-vim-theme'
   use 'navarasu/onedark.nvim'
+  use 'tpope/vim-sleuth'
 end)
