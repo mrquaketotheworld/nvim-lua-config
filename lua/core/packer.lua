@@ -42,4 +42,6 @@ return require('packer').startup(function(use)
   use 'liuchengxu/space-vim-theme'
   use 'navarasu/onedark.nvim'
   use 'tpope/vim-sleuth'
+  use 'eandrju/cellular-automaton.nvim'
+  use 'folke/zen-mode.nvim'
 end)
