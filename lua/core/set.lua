@@ -22,7 +22,10 @@ vim.opt.autochdir = true
 vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.cmd.colorscheme 'PaperColor'
-vim.opt.background = 'light'
+vim.cmd.colorscheme 'space-nvim'
+vim.opt.background = 'dark'
 vim.opt.grepprg = 'rg --smart-case --vimgrep'
 vim.opt.guicursor = 'a:blinkon250'
+vim.opt.winblend = 20
+vim.opt.pumblend = 20
+vim.opt.guifont = {'BlexMono Nerd Font Mono', 'h12'}

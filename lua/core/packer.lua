@@ -38,10 +38,11 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
   use 'mattn/emmet-vim'
   use 'Olical/conjure'
-  use 'NLKNguyen/papercolor-theme'
-  use 'liuchengxu/space-vim-theme'
+  use 'Th3Whit3Wolf/space-nvim'
   use 'navarasu/onedark.nvim'
   use 'tpope/vim-sleuth'
   use 'eandrju/cellular-automaton.nvim'
   use 'folke/zen-mode.nvim'
+  use 'ellisonleao/gruvbox.nvim'
+  use 'nvim-tree/nvim-web-devicons'
 end)
