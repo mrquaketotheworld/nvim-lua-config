@@ -42,8 +42,8 @@ vim.keymap.set('n', '<leader>q', '<C-w>q')
 vim.keymap.set('n', '<leader>e', ':e.<cr>', {silent = true})
 
 -- Open terminal
-vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr>:norm A<cr>')
-vim.keymap.set('n', '<leader>t', ':split term://bash<cr>:norm A<cr>')
+vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr><C-\\><C-n>:norm A<cr>')
+vim.keymap.set('n', '<leader>t', ':split term://bash<cr><C-\\><C-n>:norm A<cr>')
 
 -- Close terminal
 vim.keymap.set('t', '<A-;>', '<C-\\><C-n>:bd!<cr>', {silent = true})

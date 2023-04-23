@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   use 'tpope/vim-repeat'
-  use 'windwp/nvim-autopairs'
+  -- use 'windwp/nvim-autopairs'
   use 'mattn/emmet-vim'
   use 'Olical/conjure'
   use 'Th3Whit3Wolf/space-nvim'
@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-sleuth'
   use 'eandrju/cellular-automaton.nvim'
   use 'folke/zen-mode.nvim'
-  use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-web-devicons'
+  use 'tanvirtin/monokai.nvim'
+  use 'hrsh7th/cmp-buffer'
+  use 'nvim-tree/nvim-tree.lua'
 end)
