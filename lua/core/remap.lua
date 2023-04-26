@@ -38,9 +38,6 @@ vim.keymap.set('n', '<leader>o', '<C-w>o')
 -- Close window
 vim.keymap.set('n', '<leader>q', '<C-w>q')
 
--- Open Netrw
-vim.keymap.set('n', '<leader>e', ':e.<cr>', {silent = true})
-
 -- Open terminal
 vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr><C-\\><C-n>:norm A<cr>')
 vim.keymap.set('n', '<leader>t', ':split term://bash<cr><C-\\><C-n>:norm A<cr>')

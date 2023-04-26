@@ -47,4 +47,5 @@ return require('packer').startup(function(use)
   use 'tanvirtin/monokai.nvim'
   use 'hrsh7th/cmp-buffer'
   use 'nvim-tree/nvim-tree.lua'
+  use 'norcalli/nvim-colorizer.lua'
 end)
