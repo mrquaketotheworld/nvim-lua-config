@@ -24,10 +24,14 @@ vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.cmd.colorscheme 'onedark'
-vim.opt.background = 'light'
-vim.opt.grepprg = 'rg --smart-case --vimgrep'
-vim.opt.guicursor = 'a:blinkon250'
+vim.opt.background = 'dark'
+vim.opt.grepprg = 'rg --smart-case --vimgrep --follow'
+vim.opt.guicursor = ''
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
 vim.opt.guifont = { 'BlexMono Nerd Font Mono', 'h12' }
 vim.opt.completeopt = 'menu,menuone,noselect'
+vim.opt.colorcolumn = '100'
+vim.cmd([[
+  hi MatchParen ctermbg=cyan guibg=cyan
+]])

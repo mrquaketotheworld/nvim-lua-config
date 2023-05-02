@@ -2,6 +2,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = vim.api.nvim_replace_termcodes('<BS>', false, false, true)
 
+-- Yank p to +
+vim.keymap.set('n', '<leader>y', '"+yip')
+
 -- Write
 vim.keymap.set('n', '<leader>w', ':w!<cr>')
 
@@ -9,7 +12,7 @@ vim.keymap.set('n', '<leader>w', ':w!<cr>')
 vim.keymap.set('n', '<leader>x', ':x!<cr>', {silent = true})
 
 -- Revert buffer
-vim.keymap.set('n', '<leader>r', ':e!<cr>', {silent = true})
+vim.keymap.set('n', '<leader>e', ':e!<cr>', {silent = true})
 
 -- Quit all
 vim.keymap.set('n', '<leader>!', ':qa!<cr>')
