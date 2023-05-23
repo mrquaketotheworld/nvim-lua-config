@@ -24,4 +24,10 @@ lsp.setup_nvim_cmp({
 lsp.setup()
 
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = function () end
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    signs = function(namespace, bufnr)
+      return vim.b[bufnr].show_signs == true
+    end
+  }
+)

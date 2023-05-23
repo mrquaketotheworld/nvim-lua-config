@@ -32,6 +32,8 @@ vim.opt.pumblend = 20
 vim.opt.guifont = { 'BlexMono Nerd Font Mono', 'h12' }
 vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
+vim.opt.equalalways = false
+vim.opt.mouse = "a"
 vim.cmd([[
-  hi MatchParen ctermbg=cyan guibg=cyan
+  hi MatchParen gui=underline guifg=lightblue
 ]])
