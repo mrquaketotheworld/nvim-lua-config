@@ -48,4 +48,5 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'nvim-tree/nvim-tree.lua'
   use 'norcalli/nvim-colorizer.lua'
+  use 'nelstrom/vim-visual-star-search'
 end)
