@@ -44,6 +44,11 @@ vim.keymap.set('n', '<leader>q', '<C-w>q')
 -- Open terminal
 vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr><C-\\><C-n>:norm A<cr>')
 vim.keymap.set('n', '<leader>t', ':split term://bash<cr><C-\\><C-n>:norm A<cr>')
+vim.keymap.set('n', '<A-t>', ':vsplit term://bash<cr><C-\\><C-n>' ..
+                             ':split term://bash<cr><C-\\><C-n>' ..
+                             ':split term://bash<cr><C-\\><C-n><C-w>h' ..
+                             '35<C-w>>:ConjureLogSplit<cr>15<C-w>-',
+                             {silent = true})
 
 -- Close terminal
 vim.keymap.set('t', '<A-;>', '<C-\\><C-n>:bd!<cr>', {silent = true})
