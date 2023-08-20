@@ -13,18 +13,24 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     select = true,
   },
 })
+
 local cmp_completion = lsp.defaults.cmp_config({
   completion = { keyword_length = 1 },
 })
+
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings,
   completion = cmp_completion,
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
+    { name = 'luasnip' },
+  })
 })
 
 lsp.setup()
 
-
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     signs = function(namespace, bufnr)
       return vim.b[bufnr].show_signs == true

@@ -3,4 +3,5 @@ require('nvim-tree').setup({
     preserve_window_proportions = true,
   }
 })
+
 vim.keymap.set('n', '<C-n>', ':NvimTreeFindFile!<cr>', { silent = true })
