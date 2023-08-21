@@ -1,4 +1,4 @@
 vim.cmd([[
-  autocmd FileType clojure map <buffer> <Bslash> :ConjureEvalRootForm<cr>
+  autocmd FileType clojure map <buffer><silent> <Bslash> :ConjureEvalRootForm<cr>
 ]])
 
