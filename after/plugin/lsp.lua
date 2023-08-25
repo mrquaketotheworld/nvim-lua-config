@@ -3,7 +3,8 @@ local lsp = require('lsp-zero').preset({})
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({
     buffer = bufnr,
-    omit = {'gi'}})
+    omit = { 'gi' }
+  })
 end)
 
 local cmp = require('cmp')

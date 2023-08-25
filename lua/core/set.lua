@@ -23,7 +23,7 @@ vim.opt.autochdir = true
 vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.cmd.colorscheme 'tokyonight'
+vim.cmd.colorscheme 'onedark'
 vim.opt.background = 'dark'
 vim.opt.grepprg = 'rg --smart-case --vimgrep --follow'
 vim.opt.guicursor = ''
@@ -34,6 +34,6 @@ vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
 vim.opt.mouse = 'a'
--- vim.cmd([[
---   hi MatchParen gui=underline guifg=lightblue
--- ]])
+vim.cmd([[
+  hi MatchParen gui=underline guifg=lightblue
+]])
