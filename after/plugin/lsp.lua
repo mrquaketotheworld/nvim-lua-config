@@ -25,9 +25,9 @@ lsp.setup_nvim_cmp({
   mapping = cmp_mappings,
   completion = cmp_completion,
   sources = cmp.config.sources({
+    { name = 'luasnip' },
     { name = 'nvim_lsp' },
     { name = 'buffer' },
-    { name = 'luasnip' },
   })
 })
 

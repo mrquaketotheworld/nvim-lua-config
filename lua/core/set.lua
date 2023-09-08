@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.wildignore = { 'node_modules', 'tags' }
+vim.opt.wildmode = 'longest:full,full'
 vim.opt.list = true
 vim.opt.listchars = { tab = '>~', trail = '·' }
 vim.opt.keymap = 'russian-jcukenwin'
@@ -25,7 +26,9 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.cmd.colorscheme 'onedark'
 vim.opt.background = 'dark'
+vim.opt.formatoptions = 'jcroqlnt'
 vim.opt.grepprg = 'rg --smart-case --vimgrep --follow'
+vim.opt.grepformat = '%f:%l:%c:%m'
 vim.opt.guicursor = ''
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
@@ -34,6 +37,7 @@ vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
 vim.opt.mouse = 'a'
+vim.opt.splitkeep = 'screen'
 vim.cmd([[
   hi MatchParen gui=underline guifg=lightblue
 ]])

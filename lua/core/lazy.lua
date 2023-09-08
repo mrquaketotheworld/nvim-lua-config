@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' '
 
 require('lazy').setup({
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.1' },
+  { 'nvim-telescope/telescope.nvim',   tag = '0.1.1' },
   'nvim-lua/plenary.nvim',
   { 'nvim-treesitter/nvim-treesitter', cmd = 'TSUpdate' },
   'mbbill/undotree',
@@ -29,7 +29,7 @@ require('lazy').setup({
   'L3MON4D3/LuaSnip',
   'saadparwaiz1/cmp_luasnip',
   'nvim-lualine/lualine.nvim',
-  { 'phaazon/hop.nvim', branch = 'v2' },
+  { 'phaazon/hop.nvim',          branch = 'v2' },
   'tpope/vim-surround',
   'tpope/vim-commentary',
   'tpope/vim-repeat',
