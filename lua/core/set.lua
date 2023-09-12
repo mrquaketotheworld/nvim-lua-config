@@ -39,5 +39,5 @@ vim.opt.equalalways = false
 vim.opt.mouse = 'a'
 vim.opt.splitkeep = 'screen'
 vim.cmd([[
-  hi MatchParen gui=underline guifg=lightblue
+  hi MatchParen gui=underline guifg=lightblue guibg=none
 ]])
