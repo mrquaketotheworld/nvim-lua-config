@@ -26,8 +26,8 @@ vim.keymap.set('c', '<C-p>', '<Up>')
 vim.keymap.set('c', '<C-n>', '<Down>')
 
 -- Quickfix list navigation
-vim.keymap.set('n', '[e', ':cp<cr>')
-vim.keymap.set('n', ']e', ':cn<cr>')
+vim.keymap.set('n', '[e', ':cp<cr>', {silent = true})
+vim.keymap.set('n', ']e', ':cn<cr>', {silent = true})
 
 -- Delete buffer & do not close window
 vim.keymap.set('n', '<leader>d', ':bp<bar>sp<bar>bn<bar>bd!<cr>', {silent = true})
