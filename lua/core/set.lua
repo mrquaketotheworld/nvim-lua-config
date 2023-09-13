@@ -29,10 +29,10 @@ vim.opt.background = 'dark'
 vim.opt.formatoptions = 'jcroqlnt'
 vim.opt.grepprg = 'rg --smart-case --vimgrep --follow'
 vim.opt.grepformat = '%f:%l:%c:%m'
-vim.opt.guicursor = ''
+vim.opt.guicursor:append('a:block,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor')
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
-vim.opt.guifont = { 'Mononoki', 'h13' }
+vim.opt.guifont = 'Cousine Nerd Font:h12'
 vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
