@@ -42,5 +42,6 @@ require('lazy').setup({
   'nvim-tree/nvim-tree.lua',
   'norcalli/nvim-colorizer.lua',
   'nelstrom/vim-visual-star-search',
-  'equalsraf/neovim-gui-shim'
+  'equalsraf/neovim-gui-shim',
+  'andymass/vim-matchup'
 })
