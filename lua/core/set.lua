@@ -25,6 +25,7 @@ vim.opt.writebackup = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.showmode = false
+vim.opt.equalalways = false
 vim.cmd.colorscheme 'onedark'
 vim.opt.background = 'dark'
 vim.opt.formatoptions = 'jcroqlnt'
@@ -33,7 +34,7 @@ vim.opt.grepformat = '%f:%l:%c:%m'
 vim.opt.guicursor:append('a:block,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor')
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
-vim.opt.guifont = 'JetBrainsMono Nerd Font:h12'
+vim.opt.guifont = 'Cozette:h8'
 vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
