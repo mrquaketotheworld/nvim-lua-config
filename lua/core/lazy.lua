@@ -43,5 +43,6 @@ require('lazy').setup({
   'norcalli/nvim-colorizer.lua',
   'nelstrom/vim-visual-star-search',
   'equalsraf/neovim-gui-shim',
-  'andymass/vim-matchup'
+  'andymass/vim-matchup',
+  { 'ellisonleao/gruvbox.nvim', priority = 1000 }
 })
