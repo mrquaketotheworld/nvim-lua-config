@@ -42,12 +42,14 @@ vim.keymap.set('n', '<leader>o', '<C-w>o')
 vim.keymap.set('n', '<leader>q', '<C-w>q')
 
 -- Open terminal
-vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr><C-\\><C-n>:norm A<cr>')
-vim.keymap.set('n', '<leader>t', ':split term://bash<cr><C-\\><C-n>:norm A<cr>')
-vim.keymap.set('n', '<A-t>', ':vsplit term://bash<cr><C-\\><C-n>' ..
+vim.keymap.set('n', '<leader>v', ':vsplit term://bash<cr><C-\\><C-n>:norm A<cr>', {silent = true})
+vim.keymap.set('n', '<leader>t', ':split term://bash<cr><C-\\><C-n>:norm A<cr>', {silent = true})
+vim.keymap.set('n', '<A-t>', '<C-w>l\'C:vsplit term://bash<cr><C-\\><C-n>' ..
                              ':split term://bash<cr><C-\\><C-n>' ..
                              ':split term://bash<cr><C-\\><C-n><C-w>h' ..
-                             '35<C-w>>:ConjureLogSplit<cr>15<C-w>-',
+                             '35<C-w>>:ConjureLogSplit<cr>15<C-w>-' ..
+                             '<C-w>k<C-w>l lein repl :start :port 1667<cr>' ..
+                             '<C-\\><C-n><C-w>h',
                              {silent = true})
 
 -- Close terminal
