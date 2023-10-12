@@ -40,6 +40,8 @@ vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
 vim.opt.mouse = 'a'
 vim.opt.splitkeep = 'screen'
+vim.opt.laststatus = 3
 vim.cmd([[
   hi MatchParen gui=underline guifg=lightblue guibg=none
+  highlight WinSeparator guibg=None
 ]])

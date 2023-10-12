@@ -3,8 +3,8 @@ require('nvim-tree').setup({
     preserve_window_proportions = true,
   },
   filters = {
-    git_ignored = true,
-    dotfiles = true,
+    git_ignored = false,
+    dotfiles = false,
   },
 })
 
