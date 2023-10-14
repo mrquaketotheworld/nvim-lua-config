@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ' '
 
 require('lazy').setup({
-  { 'nvim-telescope/telescope.nvim',   tag = '0.1.1' },
+  { 'nvim-telescope/telescope.nvim',   tag = '0.1.4' },
   'nvim-lua/plenary.nvim',
   { 'nvim-treesitter/nvim-treesitter', cmd = 'TSUpdate' },
   'mbbill/undotree',
