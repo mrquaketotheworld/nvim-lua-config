@@ -5,7 +5,8 @@ require('lualine').setup({
     section_separators = { left = '', right = '' },
   },
   sections = {
-    lualine_c = {'%F', "%(%{repeat(printf('%s',!&iminsert?'en':get(b:,'keymap_name','en')),mode()==#'i')}%)"},
-    lualine_z = { '%v', '%l/%L' }
+    lualine_c = { '%F', "%(%{repeat(printf('%s',!&iminsert?'en':get(b:,'keymap_name','en')),mode()==#'i')}%)" },
+    lualine_y = { '%v' },
+    lualine_z = { '%l/%L' }
   },
 })
