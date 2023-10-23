@@ -9,7 +9,7 @@ vim.opt.cursorline = true
 vim.opt.wildignore = { 'node_modules', 'tags' }
 vim.opt.wildmode = 'longest:full,full'
 vim.opt.list = true
-vim.opt.listchars = { tab = '>~', trail = '·' }
+vim.opt.listchars = { tab = '  ', trail = '·' }
 vim.opt.keymap = 'russian-jcukenwin'
 vim.opt.imsearch = 0
 vim.opt.iminsert = 0

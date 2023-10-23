@@ -18,3 +18,11 @@ ls.add_snippets('javascript', {
     t(')'),
   })
 })
+
+ls.add_snippets('go', {
+  s('p', {
+    t('fmt.Println('),
+    i(1),
+    t(')'),
+  })
+})

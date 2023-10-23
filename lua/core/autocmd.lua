@@ -13,5 +13,12 @@ local function open_nvim_tree()
   require("nvim-tree.api").tree.open()
 end
 
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-require'colorizer'.setup({'css'}) -- creates autocmd
+vim.api.nvim_create_autocmd({ 'VimEnter' }, { callback = open_nvim_tree })
+require 'colorizer'.setup({ 'css' }) -- creates autocmd
+
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = { 'conjure*' },
+  callback = function(ev)
+    vim.diagnostic.disable(ev.buf)
+  end
+})

@@ -24,6 +24,7 @@ local cmp_completion = lsp.defaults.cmp_config({
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings,
   completion = cmp_completion,
+  preselect = cmp.PreselectMode.None,
   sources = cmp.config.sources({
     { name = 'luasnip' },
     { name = 'nvim_lsp' },

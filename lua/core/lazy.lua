@@ -44,5 +44,5 @@ require('lazy').setup({
   'nelstrom/vim-visual-star-search',
   'equalsraf/neovim-gui-shim',
   'andymass/vim-matchup',
-  { 'ellisonleao/gruvbox.nvim', priority = 1000 }
+  { 'windwp/nvim-autopairs', event = 'InsertEnter', opts = {} }
 })
