@@ -29,9 +29,6 @@ vim.keymap.set('c', '<C-n>', '<Down>')
 vim.keymap.set('n', '[e', ':cp<cr>', {silent = true})
 vim.keymap.set('n', ']e', ':cn<cr>', {silent = true})
 
--- Delete buffer & do not close window
-vim.keymap.set('n', '<leader>d', ':bp<bar>sp<bar>bn<bar>bd!<cr>', {silent = true})
---
 -- Delete buffer & close window
 vim.keymap.set('n', '<A-;>', ':bd!<cr>', {silent = true})
 

@@ -44,5 +44,7 @@ require('lazy').setup({
   'nelstrom/vim-visual-star-search',
   'equalsraf/neovim-gui-shim',
   'andymass/vim-matchup',
+  'mfussenegger/nvim-dap',
+  'leoluz/nvim-dap-go',
   { 'windwp/nvim-autopairs', event = 'InsertEnter', opts = {} }
 })
