@@ -45,6 +45,6 @@ require('lazy').setup({
   'equalsraf/neovim-gui-shim',
   'andymass/vim-matchup',
   'mfussenegger/nvim-dap',
-  'leoluz/nvim-dap-go',
+  'theHamsta/nvim-dap-virtual-text',
   { 'windwp/nvim-autopairs', event = 'InsertEnter', opts = {} }
 })
