@@ -28,3 +28,4 @@ vim.fn.sign_define('DapBreakpoint', { text = '•' })
 
 vim.keymap.set({ 'n', 'v' }, '<leader>dh', widgets.hover)
 require('nvim-dap-virtual-text').setup()
+require('dap-go').setup()
