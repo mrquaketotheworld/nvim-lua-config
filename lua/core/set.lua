@@ -45,3 +45,4 @@ vim.cmd([[
   hi MatchParen gui=underline guifg=lightblue guibg=none
   highlight WinSeparator guibg=None
 ]])
+--hi Cursor guibg=none guifg=none
