@@ -22,7 +22,12 @@ vim.keymap.set('n', '<leader>dk', function()
   widgets_scopes.close()
   widgets_frames.close()
 end)
-
+vim.keymap.set('n', '<Leader>dt', function()
+  widgets.centered_float(widgets.threads)
+end)
+vim.keymap.set('n', '<Leader>ds', function()
+  widgets.centered_float(widgets.scopes)
+end)
 vim.fn.sign_define('DapStopped', { text = '▶' })
 vim.fn.sign_define('DapBreakpoint', { text = '•' })
 
