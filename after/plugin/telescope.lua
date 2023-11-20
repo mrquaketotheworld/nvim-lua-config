@@ -4,9 +4,6 @@ vim.keymap.set('n', '<A-f>', builtin.find_files, {})
 vim.keymap.set('n', '<A-g>', builtin.git_files, {})
 vim.keymap.set('n', '<A-b>', builtin.buffers, {})
 vim.keymap.set('n', '<A-s>', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>ps', function()
-  builtin.grep_string({ search = vim.fn.input('Grep > ') });
-end)
 
 require('telescope').setup({
   defaults = {
