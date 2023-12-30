@@ -24,5 +24,14 @@ ls.add_snippets('go', {
     t('fmt.Println('),
     i(1),
     t(')'),
+  }),
+  s('for', {
+    t('for _, '),
+    i(1),
+    t(' := range '),
+    i(2),
+    t(' {'),
+    i(3),
+    t('}'),
   })
 })

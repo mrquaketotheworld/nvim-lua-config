@@ -7,6 +7,7 @@ vim.cmd([[
     au WinLeave * set nocursorline
   augroup END
   autocmd TermOpen * setlocal nonumber norelativenumber
+  autocmd FileType go setlocal tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 ]])
 
 local function open_nvim_tree()

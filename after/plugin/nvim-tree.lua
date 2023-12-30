@@ -1,6 +1,7 @@
 require('nvim-tree').setup({
   view = {
     preserve_window_proportions = true,
+    signcolumn = "no",
   },
   filters = {
     git_ignored = false,

@@ -36,7 +36,6 @@ require('lazy').setup({
   'mattn/emmet-vim',
   'Olical/conjure',
   'navarasu/onedark.nvim',
-  'tpope/vim-sleuth',
   'nvim-tree/nvim-web-devicons',
   'hrsh7th/cmp-buffer',
   'nvim-tree/nvim-tree.lua',
@@ -47,5 +46,5 @@ require('lazy').setup({
   'mfussenegger/nvim-dap',
   'leoluz/nvim-dap-go',
   'theHamsta/nvim-dap-virtual-text',
-  { 'windwp/nvim-autopairs', event = 'InsertEnter', opts = {} }
+  'pappasam/papercolor-theme-slim'
 })

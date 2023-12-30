@@ -26,7 +26,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.showmode = false
 vim.opt.equalalways = false
-vim.cmd.colorscheme 'onedark'
+vim.cmd.colorscheme 'PaperColorSlim'
 vim.opt.background = 'dark'
 vim.opt.formatoptions = 'jcroqlnt'
 vim.opt.grepprg = 'rg --smart-case --vimgrep --follow'
@@ -34,15 +34,16 @@ vim.opt.grepformat = '%f:%l:%c:%m'
 vim.opt.guicursor:append('a:block,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor')
 vim.opt.winblend = 20
 vim.opt.pumblend = 20
-vim.opt.guifont = 'Cousine Nerd Font Mono:h12'
+vim.opt.guifont = 'Roboto Mono [GOOG]:h11'
 vim.opt.completeopt = 'menu,menuone,noselect'
 vim.opt.colorcolumn = '100'
 vim.opt.equalalways = false
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.mouse = 'a'
 vim.opt.splitkeep = 'screen'
 vim.opt.laststatus = 3
 vim.cmd([[
   hi MatchParen gui=underline guifg=lightblue guibg=none
   highlight WinSeparator guibg=None
+  hi Cursor guibg=none guifg=none
 ]])
---hi Cursor guibg=none guifg=none
